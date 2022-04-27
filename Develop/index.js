@@ -13,19 +13,43 @@ function createManager(){
         {
             name:'managerName',
             type:'input',
-            message:'Managers name?'
+            message:'Managers name?',
+            validate: function (answer) {
+                if (answer.length < 1) {
+                    return console.log("name is very required.");
+                }
+                return true;
+            }
         },{
             name:'managerId',
             type:'input',
-            message:'Managers ID?'
+            message:'Managers ID?',
+            validate: function (answer) {
+                if (answer.length < 1) {
+                    return console.log("id is very required.");
+                }
+                return true;
+            }
         },{
             name:'managerEmail',
             type:'input',
-            message:'Managers email?'
+            message:'Managers email?',
+            validate: function (answer) {
+                if (answer.length < 1) {
+                    return console.log("email is very required.");
+                }
+                return true;
+            }
         },{
             name:'managerOfficeNumber',
             type:'input',
-            message:'Managers office number?'
+            message:'Managers office number?',
+            validate: function (answer) {
+                if (answer.length < 1) {
+                    return console.log("office number is very required.");
+                }
+                return true;
+            }
         }
     ]).then(answers =>{
         const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerOfficeNumber)
@@ -69,19 +93,43 @@ function addEngineer(){
         {
             name:'engineerName',
             type:'input',
-            message:'engineers name?'
+            message:'engineers name?',
+            validate: function (answer) {
+                if (answer.length < 1) {
+                    return console.log("name is very required.");
+                }
+                return true;
+            }
         },{
             name:'engineerId',
             type:'input',
-            message:'engineers ID?'
+            message:'engineers ID?',
+            validate: function (answer) {
+                if (answer.length < 1) {
+                    return console.log("id is very required.");
+                }
+                return true;
+            }
         },{
             name:'engineerEmail',
             type:'input',
-            message:'engineers email?'
+            message:'engineers email?',
+            validate: function (answer) {
+                if (answer.length < 1) {
+                    return console.log("email is very required.");
+                }
+                return true;
+            }
         },{
             name:'engineerGithub',
             type:'input',
-            message:'engineers github?'
+            message:'engineers github?',
+            validate: function (answer) {
+                if (answer.length < 1) {
+                    return console.log("github is very required.");
+                }
+                return true;
+            }
         }
     ]).then(engineerAnswers =>{
         const engineer = new Engineer(engineerAnswers.engineerName, engineerAnswers.engineerId, engineerAnswers.engineerEmail, engineerAnswers.engineerGithub)
@@ -96,19 +144,43 @@ function addIntern(){
         {
             name:'internName',
             type:'input',
-            message:'interns name?'
+            message:'interns name?',
+            validate: function (answer) {
+                if (answer.length < 1) {
+                    return console.log("name is very required.");
+                }
+                return true;
+            }
         },{
             name:'internId',
             type:'input',
-            message:'interns ID?'
+            message:'interns ID?',
+            validate: function (answer) {
+                if (answer.length < 1) {
+                    return console.log("id is very required.");
+                }
+                return true;
+            }
         },{
             name:'internEmail',
             type:'input',
-            message:'interns email?'
+            message:'interns email?',
+            validate: function (answer) {
+                if (answer.length < 1) {
+                    return console.log("email is very required.");
+                }
+                return true;
+            }
         },{
             name:'internSchool',
             type:'input',
-            message:'interns school?'
+            message:'interns school?',
+            validate: function (answer) {
+                if (answer.length < 1) {
+                    return console.log("school is very required.");
+                }
+                return true;
+            }
         }
     ]).then(internAnswers =>{
         const intern = new Intern(internAnswers.internName, internAnswers.internId, internAnswers.internEmail, internAnswers.internSchool)
