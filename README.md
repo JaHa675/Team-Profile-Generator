@@ -31,7 +31,7 @@ After opening run npm i to install dependencies then run the function from the c
 
 ## Usage
 
-Used to generate an HTML webpage that displays important info about team members. Supports one manager and as many interns and engineers as you want. Run it with node index.js from the command line.
+Used to generate an HTML webpage that displays important info about team members. Supports one manager and as many interns and engineers as you want. Run it with node index.js from the command line. Sample HTML page is in /develop/product
 
 ---
 
