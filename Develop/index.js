@@ -190,7 +190,7 @@ function addIntern(){
 }
 
 function createTeamPage(){
-    fs.writeFile('./output/team.html', team(teamMembers),(err) => err ? console.error(err) : console.log('Success!'))
+    fs.writeFile('./product/team.html', team(teamMembers),(err) => err ? console.error(err) : console.log('Success!'))
 };
 
 createManager();
