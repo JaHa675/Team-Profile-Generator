@@ -84,7 +84,7 @@ function addEngineer(){
             message:'engineers github?'
         }
     ]).then(engineerAnswers =>{
-        const engineer = new Engineer(engineerAnswers.engineerName, engineerAnswers.engineerId, engineerAnswers.engineerEmail, engineerAnswers.engineerOfficeNumber)
+        const engineer = new Engineer(engineerAnswers.engineerName, engineerAnswers.engineerId, engineerAnswers.engineerEmail, engineerAnswers.engineerGithub)
         teamMembers.push(engineer)
         console.log(teamMembers)
         ask();
@@ -111,7 +111,7 @@ function addIntern(){
             message:'interns school?'
         }
     ]).then(internAnswers =>{
-        const intern = new Intern(internAnswers.internName, internAnswers.internId, internAnswers.internEmail, internAnswers.internOfficeNumber)
+        const intern = new Intern(internAnswers.internName, internAnswers.internId, internAnswers.internEmail, internAnswers.internSchool)
         teamMembers.push(intern)
         console.log(teamMembers)
         ask();
